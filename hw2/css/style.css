@@ -1,0 +1,137 @@
+/* - Links Pseudoklasses 
+- nicht nur color
+
+
+- Probleme mit Grid
+
+- code checken ob alle regeln angewandt werden
+
+- Farben nicht als Namen angeben
+- ggf. Screensize für grading anegeben
+*/
+
+
+/* 
+
+
+
+Use a descendent selector to style only the image in the nav to have a width of about 10%. 
+If you want to make your site look a bit more like my screenshot, you can also add position: relative;  top: 20px; to the rule.
+
+Style the grid class to use a two column grid where each column is approximately 40%.  
+Don't forget that to style a class element your selector should start with a period.
+
+There is a good chance that your site will not look like mine. Use the descendent selector to style only the images in the grid class to have a width of 100%. 
+(Check the parks page to make sure this change doesn't affect any images in the flex class.)   
+
+Go back and adjust the grid class again. Play with the justify-content, align-items, and row-gap property values to copy the look of the screenshots above.
+
+PARKS Style the flex class to use flex. Play with the flex-wrap and justify-content property values to copy the look of the screenshots above.
+
+Validate your code using https://wave.webaim.org/
+
+ or the wave browser extension.
+
+Submit your link.
+
+Complete three peer reviews. */
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120%;
+}
+
+header {
+    background-color: #ece6e6;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+}
+
+nav a {
+    text-decoration: none;
+    line-height: 300%;
+}
+
+header img {
+    width: 10%;
+}
+
+main {
+    background-color: #ece6e6;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #ece6e6;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    width: 80%;
+}
+
+/* li {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+} */
+
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #163e88;
+}
+
+p {
+    line-height: 150%;
+}
+
+.current {
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+a:hover,
+a:focus {
+    color: #ff0000;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly;
+    justify-items: center;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+.gridBox img {
+    width: 100%;
+}
+
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
